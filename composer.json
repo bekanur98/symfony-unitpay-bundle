@@ -1,0 +1,63 @@
+{
+    "type": "symfony-bundle",
+    "name": "actionm/symfony-unitpay",
+    "description": "UnitPay payments for Symfony",
+    "keywords": [
+        "symfony-unitpay",
+        "unitpay",
+        "payments"
+    ],
+    "homepage": "https://github.com/bekanur98/symfony-unitpay-bundle",
+    "authors": [
+        {
+            "name": "Beknur",
+            "email": "bekanur98@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.2.5",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/console": "5.2.*",
+        "symfony/dotenv": "5.2.*",
+        "symfony/flex": "^1.3.1",
+        "symfony/framework-bundle": "5.2.*",
+        "symfony/yaml": "5.2.*"
+    },
+    "require-dev": {
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "ActionM\\UnitPayBundle": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ActionM\\UnitPayBundle\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.2.*"
+        }
+    }
+}
